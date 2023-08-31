@@ -292,6 +292,14 @@ button:active,
   top: 100%;
 }
 
+.social-media {
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  padding: 0 5px;
+}
+
 /* Media queries */
 @media all and (max-width: 500px) {
   .project-list {
