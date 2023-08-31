@@ -149,8 +149,9 @@ button:active,
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 260px;
   margin-right: 50px;
+  padding: 10px;
   border-radius: 50%;
 }
 
@@ -303,6 +304,14 @@ button:active,
 
 /* Media queries */
 @media all and (max-width: 500px) {
+  .profile {
+    max-width: 320px;
+  }
+
+  .profile__portrait {
+    margin-bottom: 25px;
+  }
+
   .project-list {
     grid-template-columns: 1fr;
   }
