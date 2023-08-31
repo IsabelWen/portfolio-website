@@ -166,6 +166,16 @@ button:active,
   padding: 15px;
 }
 
+/* About me Page */
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about__text {
+  text-align: center;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -210,16 +220,6 @@ button:active,
   to {
     transform: translate(100px, 48px);
   }
-}
-
-/* About me Page */
-.about {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.about__text {
-  text-align: center;
 }
 
 /* Work Page */
@@ -331,7 +331,7 @@ button:active,
 
 @media all and (max-width: 750px) {
   .project-list {
-    grid-gap: 10px;
+    grid-gap: 15px;
   }
 
   h1 {
