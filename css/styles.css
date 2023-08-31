@@ -216,12 +216,13 @@ button:active,
 /* Work Page */
 
 .work {
-  max-width: 70%;
+  max-width: 75%;
   margin: 0 auto;
 }
 
 .work h1 {
   text-align: center;
+  padding: 10px;
 }
 
 /* start grid fallback */
@@ -237,7 +238,7 @@ button:active,
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 25px;
     margin: 0;
   }
 
