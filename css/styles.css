@@ -286,7 +286,7 @@ button:active,
 #submit-message {
   flex-grow: 0;
   flex-shrink: 1;
-  max-width: 20%;
+  max-width: 120px;
   margin: 15px 0;
 }
 
