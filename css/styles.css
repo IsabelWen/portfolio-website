@@ -127,6 +127,10 @@ button:active,
   text-align: right;
 }
 
+.navigation-list__item--active {
+  color: var(--secondary-color);
+}
+
 .navigation-list {
   list-style-type: none;
 }
