@@ -278,7 +278,7 @@ button:active,
   flex-grow: 0;
   flex-shrink: 1;
   max-width: 20%;
-  margin: 5px;
+  margin: 15px 0;
 }
 
 /* Footer */
