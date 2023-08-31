@@ -259,6 +259,10 @@ button:active,
   justify-content: center;
 }
 
+.contact__information {
+  margin: 30px auto;
+}
+
 #contact-form {
   display: flex;
   flex-direction: column;
