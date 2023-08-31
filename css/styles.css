@@ -82,6 +82,7 @@ button,
   font-size: var(--font-size-normal);
   padding: 10px;
   border-radius: 3px;
+  margin: 10px auto;
 
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
