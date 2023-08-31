@@ -52,18 +52,20 @@ h3 {
 a {
   color: var(--primary-color);
   font-weight: var(--font-weight-bold);
-  text-decoration: none;
+  text-decoration: underline transparent;
+  transition: text-decoration 0.3s ease;
 }
 
 a:hover,
 a:focus {
   /* No underlining when hovering over a link */
-  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
 }
 
 a:active {
   /* selected link */
   color: var(--secondary-color);
+  text-decoration-color: var(--secondary-color);
 }
 
 /* button styling */
