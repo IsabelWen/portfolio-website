@@ -378,6 +378,10 @@ button:active {
   flex-direction: column;
 }
 
+.error-message {
+  color: #f00;
+}
+
 #contact-email,
 #contact-tel,
 #contact-message {
