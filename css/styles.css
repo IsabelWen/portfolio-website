@@ -252,6 +252,16 @@ button:active,
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+.project-list__item p {
+  min-height: 100px;
+}
+
+.project-list__item .button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
 /* end grid fallback */
 
 @supports (display: grid) {
