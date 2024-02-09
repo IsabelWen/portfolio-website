@@ -7,7 +7,7 @@ text-color (greenish black): #0a0c08
 
 :root {
   --primary-color: #4c764c;
-  --secondary-color: #d67d00;
+  --secondary-color: #ffa424;
   --text-color: #0a0c08;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
@@ -75,49 +75,58 @@ button,
   /* overwrite browser defaults and resets the border */
   border: none;
   display: inline-block;
+  color: #000;
 
   /* takes the font from the outer container */
   font-family: inherit;
 
-  /* styles the button */
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-size: var(--font-size-normal);
-  padding: 10px;
-  border-radius: 3px;
-  margin: 10px auto;
+  /*styling*/
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid #000;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
 
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  border-right: 2px solid rgba(0, 0, 0, 0.3);
-  border-left: 0.3px solid rgba(0, 0, 0, 0.1);
-  border-top: 0.3px solid rgba(0, 0, 0, 0.1);
-
-  letter-spacing: 1.5px;
-
-  /* transition */
-  transition: opacity 0.5s;
-  transition: letter-spacing 0.4s;
-  transition-timing-function: ease-in-out;
+button::after,
+.button::after {
+  content: "";
+  background-color:var(--secondary-color);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+  text-decoration: underline transparent;
 }
 
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
+  text-decoration: underline transparent;
+}
+
+button:hover::after,
+button:focus::after,
+.button:hover::after,
+.button:focus::after {
   cursor: pointer;
-  opacity: 0.8;
   text-decoration: none;
+  top: 0px;
+  left: 0px;
+  text-decoration: underline transparent;
 }
 
 button:active,
 .button:active {
-  background-color: #fff;
-  border-top: 2px solid rgba(0, 0, 0, 0.3);
-  border-left: 2px solid rgba(0, 0, 0, 0.3);
-  border-bottom: none;
-  border-right: none;
-  color: var(--secondary-color);
+  border: none;
+  color: #fff;
+  text-decoration: underline transparent;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 /* Header */
