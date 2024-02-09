@@ -99,7 +99,8 @@ button::after,
   height: 100%;
   top: 7px;
   left: 7px;
-  transition: 0.2s;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
   text-decoration: underline transparent;
 }
 
@@ -123,8 +124,9 @@ button:focus::after,
 
 button:active,
 .button:active {
+  color: #000;
   border: none;
-  color: #fff;
+  background-color: #fff;
   text-decoration: underline transparent;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
