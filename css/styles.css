@@ -18,6 +18,7 @@ text-color (greenish black): #0a0c08
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -135,10 +136,6 @@ button:active,
   text-align: right;
 }
 
-.navigation-list__item--active {
-  color: var(--secondary-color);
-}
-
 .navigation-list {
   list-style-type: none;
 }
@@ -152,6 +149,10 @@ button:active,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.active {
+  color: var(--secondary-color);
 }
 
 #logo {
@@ -184,6 +185,7 @@ button:active,
 
 /* Work Page */
 #work {
+  height: 100%;
 }
 
 .work {
