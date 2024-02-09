@@ -184,7 +184,6 @@ button:active,
 
 /* Work Page */
 #work {
-  height: 100vh;
 }
 
 .work {
@@ -243,11 +242,13 @@ button:active,
 /* Contact Page */
 #contact {
   height: 100vh;
+  display: flex;
 }
 
 .contact {
   margin: 0 auto;
   max-width: 50%;
+  align-self: center;
 }
 
 .contact h1 {
