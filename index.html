@@ -8,33 +8,35 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Home</title>
 </head>
 <body>
     <!-- Header including the logo and the main navigation -->
-    <header class="page-header" id="top"> 
-        <!--My logo-->
-        <img src="img/isabel-matula-logo.svg" alt="Personal logo of Isabel Matula" class="page-header__item" id="logo">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="header-container">
+        <header class="page-header" id="top"> 
+            <!--My logo-->
+            <img src="img/isabel-matula-logo.svg" alt="Personal logo of Isabel Matula" class="page-header__item" id="logo">
+            <nav class="page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="#top" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#about" role="menuitem" class="navigation-list__item">About me</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <!-- Main content -->
-    <main>
+    <main id="about">
         <div class="profile">
             <img src="img/isabel-matula.png" class="profile__portrait" alt="Isabel Matula Portrait">
             <div class="profile__text">
@@ -43,6 +45,78 @@
                     My name is Isabel Matula. I am a web developer from Germany.
                 </p>
                 <a href="work.html">Check out some of my code</a>
+            </div>
+        </div>
+    </main>
+    <!-- Work -->
+    <section class="work" id="work">
+        <h1>Work</h1>
+        <div class="project-list">
+            <!-- Project items -->
+            <div class="project-list__item">
+                <h2>Meet App</h2>
+                <a href="https://isabelwen.github.io/meet/" target="_blank"><img src="img/meet_app_project.png"></a>
+                <p>
+                    A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The Meet App uses the Google Calendar API to fetch upcoming events. Technologies used throughout the project are React, Jest-Cucumber, Puppeteer and Recharts.
+                </p>
+                <a href="https://github.com/IsabelWen/meet" target="_blank">See project on GitHub</a>
+             </div>
+             <div class="project-list__item">
+                <h2>Project 2</h2>
+                <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis ut quae laudantium hic esse unde!
+                </p>
+                <a href="#" target="_blank">See project on GitHub</a>
+             </div>
+             <div class="project-list__item">
+                <h2>Project 3</h2>
+                <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat doloremque eaque corporis illo numquam suscipit voluptas.
+                </p>
+                <a href="#" target="_blank">See project on GitHub</a>
+             </div>
+             <div class="project-list__item">
+                <h2>Project 4</h2>
+                <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eos necessitatibus illum deserunt, quod atque earum.
+                </p>
+                <a href="#" target="_blank">See project on GitHub</a>
+             </div>
+             <div class="project-list__item">
+                <h2>Project 5</h2>
+                <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error eos quo exercitationem accusantium, sapiente eum optio.
+                </p>
+                <a href="#" target="_blank">See project on GitHub</a>
+             </div>
+             <div class="project-list__item">
+                <h2>Project 6</h2>
+                <a href="#" target="_blank"><img src="img/project_cover.png"></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem temporibus quis voluptatibus nesciunt ea recusandae autem.
+                </p>
+                <a href="#" target="_blank">See project on GitHub</a>
+             </div>
+        </div>
+    </section>
+    <!-- Contact Information -->
+    <main id="contact">
+        <div class="contact">
+            <h1>Contact</h1>
+            <div class="contact__information">
+                Isabel Matula<br>
+                Badener Ring 19<br>
+                12101 Berlin<br>
+                Germany<br>
+                <br>
+                Email <a href="mailto:isabel.matula(at)outlook(dot)de">isabel.matula@outlook.de</a>
+            </div>
+            <div>
+                <a href="mailto:isabel.matula(at)outlook(dot)de" class="button">Contact me</a>
             </div>
         </div>
     </main>
@@ -55,5 +129,6 @@
         </div>
         <a href="#top">Back to top</a>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

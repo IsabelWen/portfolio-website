@@ -52,3 +52,4 @@
 
     emailInput.addEventListener('input', validateEmail);
 })();
+

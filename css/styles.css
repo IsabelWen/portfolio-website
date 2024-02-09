@@ -114,10 +114,16 @@ button:active,
 }
 
 /* Header */
+.header-container {
+  position: sticky;
+  top: 0;
+}
+
 .page-header {
   display: flex;
   width: 100%;
   padding: 20px;
+  background-color: #ffffff;
 }
 
 .page-header__item {
@@ -137,6 +143,12 @@ button:active,
   list-style-type: none;
 }
 
+.navigation-list ul {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
@@ -148,6 +160,9 @@ button:active,
 }
 
 /* Profile Index Page */
+#about {
+  height: 100vh;
+}
 .profile {
   max-width: 800px;
   margin: 15vh auto;
@@ -166,63 +181,11 @@ button:active,
   padding: 15px;
 }
 
-/* About me Page */
-.about {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.about__text {
-  text-align: center;
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
 
 /* Work Page */
+#work {
+  height: 100vh;
+}
 
 .work {
   max-width: 75%;
@@ -276,15 +239,24 @@ button:active,
   }
 }
 
+
 /* Contact Page */
+#contact {
+  height: 100vh;
+}
+
 .contact {
   margin: 0 auto;
   max-width: 50%;
-  justify-content: center;
+}
+
+.contact h1 {
+  padding: 10px;
 }
 
 .contact__information {
   margin: 30px auto;
+  display: inline-block;
 }
 
 #contact-form {
