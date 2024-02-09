@@ -328,25 +328,22 @@ button:active,
   .profile__portrait {
     margin-bottom: 25px;
   }
-
-  .project-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .project-list {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media all and (max-width: 750px) {
   .project-list {
     grid-gap: 15px;
+    grid-template-columns: 1fr;
   }
 
   h1 {
     font-size: 22px;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1300px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
