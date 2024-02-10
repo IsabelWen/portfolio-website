@@ -308,7 +308,7 @@ button:active,
 
 /* Contact Page */
 #contact {
-  height: 50vh;
+  height: 60vh;
   max-width: 80%;
   margin: 10vh auto;
   display: flex;
@@ -323,15 +323,21 @@ button:active,
   margin: 0 auto;
   max-width: 80%;
   align-self: center;
+  display: flex;
 }
 
 .contact h1 {
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .contact__information {
-  margin: 30px auto;
-  display: inline-block;
+  margin: 20px 30px;
+  display: block;
+}
+
+.contact__animation {
+  margin: 20px 40px;
+  display: block;
 }
 
 /* Footer */
@@ -371,6 +377,10 @@ button:active,
 
   h1 {
     font-size: 22px;
+  }
+
+  .contact__animation {
+    display: none;
   }
 }
 
