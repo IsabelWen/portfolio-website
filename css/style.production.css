@@ -409,9 +409,33 @@ button:active,
 }
 
 .contact__animation {
-  margin: 20px 40px;
+  margin: 40px 60px;
   display: block;
+
 }
+
+/* SVG animation */
+svg:hover {
+  -webkit-animation: shake 0.3s infinite;
+          animation: shake 0.3s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+  50% { -webkit-transform: rotate(0eg); transform: rotate(0eg); }
+  75% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+
+@keyframes shake {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+  50% { -webkit-transform: rotate(0eg); transform: rotate(0eg); }
+  75% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+
 
 /* Footer */
 .page-footer {
