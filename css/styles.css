@@ -12,8 +12,8 @@ text-color (greenish black): #0a0c08
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-size-normal: 16px;
-  --font-family-normal: 'Lato', sans-serif;
-  --font-family-headlines: 'Playfair Display', sans-serif;
+  --font-family-normal: 'Source Sans 3', sans-serif;
+  --font-family: 'Libre Baskerville', serif;
 }
 
 * {
@@ -129,6 +129,26 @@ button:active,
   background-color: #fff;
   text-decoration: underline transparent;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* Tag styling */
+.tags {
+  margin-bottom: 15px;
+  min-height: 100px;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 3px 10px;
+  background: #808080;
+  color: #ffffff;
+  margin: 5px;
+  transition: 0.4s;
+}
+
+.tag:hover {
+  transform: translate(0, -2px);
 }
 
 /* Header */
@@ -270,7 +290,7 @@ button:active,
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 35px;
+    grid-gap: 45px;
     margin: 0;
   }
 
@@ -288,7 +308,7 @@ button:active,
 
 /* Contact Page */
 #contact {
-  height: 80vh;
+  height: 50vh;
   max-width: 80%;
   margin: 10vh auto;
   display: flex;
