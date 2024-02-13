@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Home</title>
 </head>
 <body>
@@ -36,8 +37,21 @@
     <!-- Main content -->
     <section id="about">
         <div class="profile">
-            <img src="img/isabel-matula.png" class="profile__portrait" alt="Isabel Matula Portrait">
-            <div class="profile__text">
+            <img src="img/isabel-matula.png" 
+            data-aos="fade-right" 
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out" 
+            data-aos-once="true"
+            class="profile__portrait" 
+            alt="Isabel Matula Portrait">
+            <div 
+            data-aos="fade-left" 
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"  
+            data-aos-once="true"
+            class="profile__text">
                 <h1>Full-Stack Web Developer</h1>
                 <p>
                     Hello! My name is Isabel Matula and I’m a certified Full-Stack Developer with an educational background in business administration. 
@@ -60,7 +74,12 @@
         <h1>Work</h1>
         <div class="project-list">
             <!-- Project items -->
-            <div class="project-list__item">
+            <div 
+            data-aos="fade-up" 
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out" 
+            class="project-list__item">
                 <h2>React Movie App</h2>
                 <a href="https://mymovie-api.netlify.app/login" target="_blank"><img src="img/react_movie_app_project_full.png"></a>
                 <p>
@@ -79,7 +98,12 @@
                 <a href="https://github.com/IsabelWen/movie_api-client" target="_blank" class="button">Code</a>
                 <a href="https://mymovie-api.netlify.app/login" target="_blank" class="button">Demo</a>
              </div>
-             <div class="project-list__item">
+             <div 
+             data-aos="fade-up" 
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out" 
+             class="project-list__item">
                 <h2>Meet App</h2>
                 <a href="https://isabelwen.github.io/meet/" target="_blank"><img src="img/meet_app_project_full.png"></a>
                 <p>
@@ -97,7 +121,12 @@
                 <a href="https://github.com/IsabelWen/meet" target="_blank" class="button">Code</a>
                 <a href="https://isabelwen.github.io/meet/" target="_blank" class="button">Demo</a>
              </div>
-             <div class="project-list__item">
+             <div 
+             data-aos="fade-up" 
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out" 
+             class="project-list__item">
                 <h2>Angular Movie App</h2>
                 <a href="https://isabelwen.github.io/myMovie-Angular-app/welcome" target="_blank"><img src="img/angular_movie_app_project_full.png"></a>
                 <p>
@@ -116,7 +145,12 @@
                 <a href="https://github.com/IsabelWen/myMovie-Angular-client" target="_blank" class="button">Code</a>
                 <a href="https://isabelwen.github.io/myMovie-Angular-app/welcome" target="_blank" class="button">Demo</a>
              </div>
-             <div class="project-list__item">
+             <div 
+             data-aos="fade-up" 
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out" 
+             class="project-list__item">
                 <h2>myMovie API</h2>
                 <a href="https://github.com/IsabelWen/movie_api" target="_blank"><img src="img/mymovie-db.png"></a>
                 <p>
@@ -128,13 +162,17 @@
                     <span class="tag">MongoDB</span>
                     <span class="tag">Mongoose</span>
                     <span class="tag">JavaScript</span>
-                    <span class="tag">CSS</span>
                     <span class="tag">Express</span>
                     <span class="tag">Postman</span>
                 </div>
                 <a href="https://github.com/IsabelWen/movie_api" target="_blank" class="button">Code</a>
              </div>
-             <div class="project-list__item">
+             <div 
+             data-aos="fade-up" 
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out" 
+             class="project-list__item">
                 <h2>Chat App</h2>
                 <a href="https://github.com/IsabelWen/chat" target="_blank"><img src="img/chat-app.png"></a>
                 <p>
@@ -150,7 +188,12 @@
                 </div>
                 <a href="https://github.com/IsabelWen/chat" target="_blank" class="button">Code</a>
              </div>
-             <div class="project-list__item">
+             <div 
+             data-aos="fade-up" 
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out" 
+             class="project-list__item">
                 <h2>Pokemon-Index</h2>
                 <a href="https://isabelwen.github.io/simple-js-app/" target="_blank"><img src="img/pokemon-index.png"></a>
                 <p>
@@ -171,7 +214,12 @@
     </section>
     <!-- Contact Information -->
     <section id="contact">
-        <div class="contact">
+        <div 
+        data-aos="fade-in" 
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out" 
+        class="contact">
             <div class="contact__information">
                 <h1>Contact Me</h1>
                 Isabel Matula<br>
@@ -220,9 +268,12 @@
         <div class="social-media">
             <a href="https://github.com/IsabelWen" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
             <a href="https://www.linkedin.com/in/isabel-matula" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
+            <a href="https://medium.com/@isabelwen" target="_blank"><img src="img/medium_icon.svg" alt="Medium"></a>
         </div>
         <a href="#top">Back to top</a>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
