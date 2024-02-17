@@ -375,6 +375,22 @@ svg:hover {
 
 /* Media queries */
 @media all and (max-width: 500px) {
+  ul {
+    padding-inline-start: 0;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .page-header__item:last-child {
+    text-align: left;
+  }
+
   .profile {
     max-width: 320px;
   }
