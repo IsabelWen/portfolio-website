@@ -373,6 +373,17 @@ svg:hover {
   padding: 0 5px;
 }
 
+.impressum {
+  color: #000;
+  font-weight: var(--font-weight-regular);
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.impressum:hover {
+  text-decoration: none;
+}
+
 /* Media queries */
 @media all and (max-width: 500px) {
   ul {
