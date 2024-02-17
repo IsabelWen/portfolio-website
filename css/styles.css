@@ -12,8 +12,8 @@ text-color (greenish black): #0a0c08
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-size-normal: 16px;
-  --font-family-normal: 'Source Sans 3', sans-serif;
-  --font-family: 'Libre Baskerville', serif;
+  --font-family-normal: 'Open Sans', sans-serif;
+  --font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -32,19 +32,19 @@ body {
 }
 
 h1 {
-  font-family: var(--font-family-headlines);
+  font-family: var(--font-family);
   font-size: 30px;
   font-weight: var(--font-weight-bold);
 }
 
 h2 {
-  font-family: var(--font-family-headlines);
+  font-family: var(--font-family);
   font-size: 24px;
   font-weight: var(--font-weight-bold);
 }
 
 h3 {
-  font-family: var(--font-family-headlines);
+  font-family: var(--font-family);
   font-size: 18px;
   font-weight: var(--font-weight-bold);
 }
@@ -214,10 +214,10 @@ button:active,
 }
 
 .profile__portrait {
-  width: 500px;
+  width: 450px;
   margin-right: 50px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 20px;
   object-fit: cover;
 }
 
@@ -375,6 +375,22 @@ svg:hover {
 
 /* Media queries */
 @media all and (max-width: 500px) {
+  ul {
+    padding-inline-start: 0;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .page-header__item:last-child {
+    text-align: left;
+  }
+
   .profile {
     max-width: 320px;
   }
