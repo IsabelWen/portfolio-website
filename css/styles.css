@@ -134,7 +134,7 @@ button:active,
 /* Tag styling */
 .tags {
   margin-bottom: 15px;
-  min-height: 100px;
+  min-height: 120px;
 }
 
 .tag {
@@ -290,7 +290,7 @@ button:active,
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 45px;
+    grid-gap: 50px;
     margin: 0;
   }
 
