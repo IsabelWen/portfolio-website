@@ -19,7 +19,7 @@ text-color (greenish black): #0a0c08
 
 body {
   background-color: #ffffff;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #0a0c08;
@@ -28,19 +28,19 @@ body {
 }
 
 h1 {
-  font-family: undefined;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
 
 h2 {
-  font-family: undefined;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
 h3 {
-  font-family: undefined;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -263,10 +263,10 @@ button:active,
 }
 
 .profile__portrait {
-  width: 500px;
+  width: 450px;
   margin-right: 50px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -462,6 +462,23 @@ svg:hover {
 
 /* Media queries */
 @media all and (max-width: 500px) {
+  ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .page-header__item:last-child {
+    text-align: left;
+  }
+
   .profile {
     max-width: 320px;
   }
