@@ -1,14 +1,13 @@
 /*
 Colors
 primary-color (green): #4c764c
-secondary-color (orange): #d67d00
-text-color (greenish black): #0a0c08
+secondary-color (orange): #ffa424
 */
 
 :root {
   --primary-color: #4c764c;
   --secondary-color: #ffa424;
-  --text-color: #0a0c08;
+  --text-color: #000;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-size-normal: 16px;
@@ -302,10 +301,23 @@ button:active,
   border-radius: 5px;
 }
 
-.modal .button{
+.close-modal {
   margin-right: 20px;
   margin-bottom: 20px;
   float: right;
+}
+
+.open-modal {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.open-modal img,
+.open-modal img:hover,
+.open-modal img:focus {
+  border-radius: 50%;
+  opacity: 1;
 }
 
 /* end grid fallback */
