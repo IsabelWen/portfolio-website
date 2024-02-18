@@ -1,14 +1,13 @@
 /*
 Colors
 primary-color (green): #4c764c
-secondary-color (orange): #d67d00
-text-color (greenish black): #0a0c08
+secondary-color (orange): #ffa424
 */
 
 :root {
   --primary-color: #4c764c;
   --secondary-color: #ffa424;
-  --text-color: #0a0c08;
+  --text-color: #000;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-size-normal: 16px;
@@ -79,6 +78,7 @@ button,
 
   /* takes the font from the outer container */
   font-family: inherit;
+  font-weight: var(--font-weight-bold);
 
   /*styling*/
   letter-spacing: 1px;
@@ -133,8 +133,7 @@ button:active,
 
 /* Tag styling */
 .tags {
-  margin-bottom: 15px;
-  min-height: 120px;
+  margin: 15px 0;
 }
 
 .tag {
@@ -275,13 +274,61 @@ button:active,
 }
 
 .project-list__item p {
-  min-height: 100px;
+  min-height: 120px;
 }
 
 .project-list__item .button {
   margin-right: 20px;
   margin-bottom: 20px;
   float: right;
+}
+
+.modal {
+  width: 60%;
+  padding: 15px 6%;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: none;
+  outline: none;
+}
+
+.modal p {
+  min-height: 50px;
+}
+
+.close-modal {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.close-modal img {
+  border-radius: 50%;
+  transition: box-shadow 0.5s;
+  transition-timing-function: ease-in-out;
+  padding: 1px;
+}
+
+.close-modal img:hover,
+.close-modal img:focus {
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.open-modal {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.open-modal img,
+.open-modal img:hover,
+.open-modal img:focus {
+  border-radius: 50%;
+  opacity: 1;
 }
 
 /* end grid fallback */
@@ -408,6 +455,10 @@ svg:hover {
 
   .profile__portrait {
     margin-bottom: 25px;
+  }
+
+  .modal {
+    width: 85%;
   }
 }
 
