@@ -133,7 +133,7 @@ button:active,
 
 /* Tag styling */
 .tags {
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 .tag {
@@ -303,6 +303,10 @@ button:active,
   cursor: default;
   opacity: 1;
   box-shadow: none;
+}
+
+.modal p {
+  min-height: 50px;
 }
 
 .close-modal {
