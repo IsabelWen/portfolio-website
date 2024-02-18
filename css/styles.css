@@ -291,6 +291,7 @@ button:active,
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border: none;
+  outline: none;
 }
 
 .modal img {
@@ -313,6 +314,20 @@ button:active,
   margin-right: 20px;
   margin-bottom: 20px;
   float: right;
+}
+
+.close-modal img {
+  border-radius: 50%;
+  transition: box-shadow 0.5s;
+  transition-timing-function: ease-in-out;
+  padding: 1px;
+}
+
+.close-modal img:hover,
+.close-modal img:focus {
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .open-modal {
