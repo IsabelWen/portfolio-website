@@ -134,7 +134,6 @@ button:active,
 /* Tag styling */
 .tags {
   margin-bottom: 15px;
-  min-height: 120px;
 }
 
 .tag {
@@ -275,7 +274,7 @@ button:active,
 }
 
 .project-list__item p {
-  min-height: 100px;
+  min-height: 120px;
 }
 
 .project-list__item .button {
