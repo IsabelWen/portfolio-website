@@ -133,7 +133,7 @@ button:active,
 
 /* Tag styling */
 .tags {
-  margin: 15px 0;
+  margin: 30px 5px;
 }
 
 .tag {
@@ -305,9 +305,9 @@ button:active,
 }
 
 .modal {
-  width: 60%;
+  width: 50%;
   padding: 15px 6%;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -317,6 +317,10 @@ button:active,
 
 .modal p {
   min-height: 50px;
+}
+
+.modal h3 {
+  margin-top: 45px;
 }
 
 .close-modal {
@@ -507,10 +511,6 @@ svg:hover {
   .profile__portrait {
     margin-bottom: 25px;
   }
-
-  .modal {
-    width: 85%;
-  }
 }
 
 @media all and (max-width: 750px) {
@@ -521,6 +521,10 @@ svg:hover {
 
   h1 {
     font-size: 22px;
+  }
+
+  .modal {
+    width: 85%;
   }
 
   .contact__animation {
