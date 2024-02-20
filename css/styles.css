@@ -532,13 +532,7 @@ svg:hover {
   }
 }
 
-@media all and (min-width: 750px) and (max-width: 1300px) {
-  .project-list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 1300px) {
+@media all and (max-width: 1000px) {
   .profile {
     flex-wrap: wrap;
     justify-content: center;
@@ -548,9 +542,28 @@ svg:hover {
     margin-right: 0;
     width: 100%;
     max-width: 700px;
+    width: 450px;
+    margin-right: 50px;
+    padding: 10px;
+    object-fit: cover;
   }
 
   .profile__text {
     flex: auto;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1300px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1300px) {
+  .profile__portrait {
+    max-width: 350px;
+    margin-right: 25px;
+    padding: 5px;
+    object-fit: contain;
   }
 }
