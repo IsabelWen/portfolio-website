@@ -197,10 +197,11 @@ button:active,
   height: auto;
 }
 
-/* Profile Index Page */
-#about {
+/* Home */
+#home {
   height: 100%;
 }
+
 .profile {
   max-width: 80%;
   margin: 10vh auto;
@@ -213,8 +214,9 @@ button:active,
 }
 
 .profile__portrait {
-  width: 450px;
-  margin-right: 50px;
+  width: 500px;
+  max-height: 800px;
+  margin: 35px 50px;
   padding: 10px;
   border-radius: 20px;
   object-fit: cover;
@@ -223,6 +225,7 @@ button:active,
 .profile__text {
   flex: 1 1 100px;
   padding: 15px;
+  margin-right: 50px;
 }
 
 .profile__text h1 {
@@ -231,10 +234,122 @@ button:active,
 }
 
 .profile .button {
-  margin-top: 15%;
-  margin-right: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px 10px;
   float: right;
 }
+
+
+/* Toolbelt */
+@keyframes toolbelt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.toolbelt {
+  margin:  20vh auto;
+  max-width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.toolbelt h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.toolbelt:before,
+.toolbelt:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.toolbelt:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.toolbelt:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.toolbelt:hover .toolbelt__logos {
+  animation-play-state: paused;
+}
+
+.toolbelt__logos {
+  display: inline-block;
+  padding: 30px 0;
+  animation: 25s toolbelt infinite linear;
+}
+
+.toolbelt__logos img {
+  height: 60px;
+  margin: 0 30px;
+}
+
+
+/* About me */
+#about {
+  height: 100%;
+}
+
+.about {
+  max-width: 75%;
+  margin:  20vh auto;
+}
+
+.about h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.about__item {
+  max-width: 80%;
+  margin: 10vh auto;
+  background-color: rgba(168, 152, 152, 0.09);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+}
+
+.about__item h2 {
+  padding: 10px;
+  margin: 5px;
+}
+
+.about__item-content {
+  display: flex;
+}
+
+#first {
+  display: none;
+}
+
+.about__item-content img {
+  width: 45%;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.about__item-content p {
+  padding: 10px;
+  margin: 5px;
+}
+
 
 /* Work Page */
 #work {
@@ -295,7 +410,7 @@ button:active,
 }
 
 .project-list__item p {
-  min-height: 120px;
+  min-height: 150px;
 }
 
 .project-list__item .button {
@@ -343,10 +458,27 @@ button:active,
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 .open-modal {
   margin-right: 20px;
   margin-bottom: 20px;
   float: right;
+  animation: pulse 1.7s infinite;
+}
+
+.open-modal:hover {
+  animation: none;
 }
 
 .open-modal img,
@@ -355,58 +487,6 @@ button:active,
   border-radius: 50%;
   opacity: 1;
 }
-
-/* Toolbelt */
-@keyframes toolbelt {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.toolbelt {
-  margin:  20vh auto;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-
-.toolbelt:before,
-.toolbelt:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 250px;
-  height: 100%;
-  z-index: 2;
-}
-
-.toolbelt:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
-}
-
-.toolbelt:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
-}
-
-.toolbelt:hover .toolbelt__logos {
-  animation-play-state: paused;
-}
-
-.toolbelt__logos {
-  display: inline-block;
-  padding: 30px 0;
-  animation: 25s toolbelt infinite linear;
-}
-
-.toolbelt__logos img {
-  height: 60px;
-  margin: 0 30px;
-}
-
 
 /* Contact Page */
 #contact {
@@ -438,7 +518,7 @@ button:active,
 }
 
 .contact__animation {
-  margin: 40px 60px;
+  margin: 40px 45px;
   display: block;
 
 }
@@ -514,6 +594,41 @@ svg:hover {
 }
 
 @media all and (max-width: 750px) {
+  .profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile__portrait {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 500px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .profile__text {
+    flex: auto;
+  }
+
+  .profile__text .button {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    float:none;
+    text-align: center;
+  }
+
+  .about__item-content {
+    display: flex;
+  }
+
+  .about__item-content img {
+    display: none;
+  }
+
   .project-list {
     grid-gap: 15px;
     grid-template-columns: 1fr;
@@ -532,25 +647,59 @@ svg:hover {
   }
 }
 
-@media all and (min-width: 750px) and (max-width: 1300px) {
-  .project-list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 1300px) {
+@media all and (min-width: 750px) and (max-width: 1200px) {
   .profile {
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .profile__portrait {
-    margin-right: 0;
+    margin-right: -50%;
+    margin-bottom: -200px;
     width: 100%;
     max-width: 700px;
+    max-height: 200px;
+    object-fit: contain;
+    padding: 10px;
   }
 
   .profile__text {
     flex: auto;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1350px) {
+  .about__item-content {
+    display: inline-block;
+  }
+
+  #first {
+    display: block;
+    float: right;
+  }
+
+  #second {
+    display: none;
+  }
+
+  .about__item-content img {
+    object-fit: contain;
+    float: inline-start;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .profile__text h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 1400px) and (max-width: 1600px) {
+  .profile__text h1 {
+    font-size: 35px;
   }
 }
