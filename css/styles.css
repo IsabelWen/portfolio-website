@@ -214,8 +214,9 @@ button:active,
 }
 
 .profile__portrait {
-  width: 450px;
-  margin: 0 50px;
+  width: 500px;
+  max-height: 800px;
+  margin: 35px 50px;
   padding: 10px;
   border-radius: 20px;
   object-fit: cover;
@@ -233,8 +234,9 @@ button:active,
 }
 
 .profile .button {
-  margin-top: 15%;
-  margin-right: 50px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px 10px;
   float: right;
 }
 
@@ -592,9 +594,27 @@ svg:hover {
 }
 
 @media all and (max-width: 750px) {
+  .profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile__portrait {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 500px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .profile__text {
+    flex: auto;
+  }
+
   .profile__text .button {
     width: 100%;
-    margin-top: 10%;
     margin-right: 10px;
     margin-left: 10px;
     float:none;
@@ -627,18 +647,19 @@ svg:hover {
   }
 }
 
-@media all and (max-width: 1300px) {
+@media all and (min-width: 750px) and (max-width: 1200px) {
   .profile {
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .profile__portrait {
-    margin-right: 0;
+    margin-right: -50%;
+    margin-bottom: -200px;
     width: 100%;
     max-width: 700px;
-    width: 450px;
-    margin-right: 50px;
+    max-height: 200px;
+    object-fit: contain;
     padding: 10px;
   }
 
@@ -668,5 +689,17 @@ svg:hover {
 
   .project-list {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .profile__text h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 1400px) and (max-width: 1600px) {
+  .profile__text h1 {
+    font-size: 35px;
   }
 }
