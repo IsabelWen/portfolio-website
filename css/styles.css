@@ -82,7 +82,7 @@ button,
 
   /*styling*/
   letter-spacing: 1px;
-  padding: 13px 50px 13px;
+  padding: 13px 40px 13px;
   outline: 0;
   border: 1px solid #000;
   position: relative;
@@ -520,7 +520,6 @@ button:active,
 .contact__animation {
   margin: 40px 45px;
   display: block;
-
 }
 
 /* SVG animation */
@@ -567,7 +566,37 @@ svg:hover {
 }
 
 /* Media queries */
+/* For 0 - 500px */
+/* Sections: Profile/Home layout/headings, Contact */
 @media all and (max-width: 500px) {
+  .profile {
+    max-width: 320px;
+  }
+
+  .profile__portrait {
+    margin-bottom: 25px;
+  }
+
+  .profile__text h2 {
+    font-size: 18px;
+  }
+
+  .profile__text h1 {
+    font-size: 20px;
+  }
+
+  #contact {
+    padding: 10px;
+  }
+
+  .contact {
+    margin: 0 0;
+  }
+}
+
+/* For 0 - 750px */
+/* Sections: Navigation, Profile/Home layout, Toolbelt, About, Project List, Button, h1, Contact Animation */
+@media all and (max-width: 750px) {
   ul {
     padding-inline-start: 0;
   }
@@ -584,16 +613,6 @@ svg:hover {
     text-align: left;
   }
 
-  .profile {
-    max-width: 320px;
-  }
-
-  .profile__portrait {
-    margin-bottom: 25px;
-  }
-}
-
-@media all and (max-width: 750px) {
   .profile {
     flex-wrap: wrap;
     justify-content: center;
@@ -613,12 +632,35 @@ svg:hover {
     flex: auto;
   }
 
+  button,
+  .button {
+    padding: 8px 25px 8px;
+  }
+
   .profile__text .button {
     width: 100%;
     margin-right: 10px;
     margin-left: 10px;
     float:none;
     text-align: center;
+  }
+
+  .toolbelt:before,
+  .toolbelt:after {
+    width: 50px;
+  }
+
+  .toolbelt__logos img {
+    height: 35px;
+    margin: 0 15px;
+  }
+
+  .about__item {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   .about__item-content {
@@ -647,6 +689,8 @@ svg:hover {
   }
 }
 
+/* For 750px - 1200px */
+/* Sections: Profile/Home, Contact Animation margin */
 @media all and (min-width: 750px) and (max-width: 1200px) {
   .profile {
     flex-wrap: wrap;
@@ -666,9 +710,19 @@ svg:hover {
   .profile__text {
     flex: auto;
   }
+
+  .contact__animation {
+    margin: 40px 30px;
+  }
 }
 
+/* For 750px - 1350px */
+/* Sections: About, Project List, Button */
 @media all and (min-width: 750px) and (max-width: 1350px) {
+  .about__item {
+    max-width: 100%;
+  }
+
   .about__item-content {
     display: inline-block;
   }
@@ -690,16 +744,29 @@ svg:hover {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
+
+  button,
+  .button {
+    padding: 13px 25px 13px;
+  }
 }
 
-@media all and (max-width: 1400px) {
+/* For 500px - 1400px */
+/* Sections: Profile h1 */
+@media all and (min-width: 500px) and (max-width: 1400px) {
   .profile__text h1 {
     font-size: 30px;
   }
 }
 
+/* For 1400px - 1600px */
+/* Sections: Profile h1, Project list p */
 @media all and (min-width: 1400px) and (max-width: 1600px) {
   .profile__text h1 {
     font-size: 35px;
+  }
+
+  .project-list__item p {
+    min-height: 180px;
   }
 }
