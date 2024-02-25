@@ -4,6 +4,22 @@ primary-color (green): #4c764c
 secondary-color (orange): #ffa424
 */
 
+@font-face { 
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.woff2) format("woff2"),
+    url(../fonts/Open_Sans/OpenSans-Regular.woff) format("woff"),
+    url(../fonts/Open_Sans/OpenSans-Regular.otf) format("opentype");
+}
+@font-face { 
+  font-family: "Montserrat";
+  font-style: bold;
+  font-weight: 700;
+  src: url(../fonts/Montserrat/Montserrat-Bold.woff2) format("woff2"),
+    url(../fonts/Montserrat/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat/Montserrat-Bold.otf) format("opentype");
+}
+
 :root {
   --primary-color: #4c764c;
   --secondary-color: #ffa424;
@@ -27,6 +43,7 @@ body {
   font-size: var(--font-size-normal);
   color: var(--text-color);
   line-height: 1.6;
+  letter-spacing: 0.2px;
   min-height: 100vh;
 }
 
@@ -327,6 +344,10 @@ button:active,
 .about__item h2 {
   padding: 10px;
   margin: 5px;
+}
+
+.about__item p {
+  line-height: 1.8;
 }
 
 .about__item-content {
